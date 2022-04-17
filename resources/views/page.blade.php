@@ -2,10 +2,14 @@
 
 @section('content')
 <div>
-    <button onclick="getData()">Get the data</button>
+    <button class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" onclick="getData()">
+        Get the data
+    </button>
 </div>
 <script type="text/javascript">
     function getData(){
+
+        console.log("fetching...");
 
         $.ajaxSetup({
             headers: {
